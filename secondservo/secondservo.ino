@@ -35,12 +35,6 @@ servo.attach(servopin);
 pinMode(ledpin,OUTPUT);
 }
 void loop(){
-  bariyer.write(0);
-  delay(100);
-  bariyer.write(90);
-  delay(1000);
-  bariyer.write(180);
-  delay(1000);
-
-
+servoTarama(0,180,1);
+servoTarama(180,0,1);
 }
